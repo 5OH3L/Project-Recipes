@@ -5,13 +5,13 @@
 body {
     background-image: url("../img/ingredients.jpg");
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 5%;
 }
 h1 {
+    margin-top: 5%;
     margin-left: 40%;
     margin-right: 40%;
     border-radius: 50px;
-    padding: .5%;
+    padding: .3%;
     background: black;
     color: white;
     text-align: center;
@@ -20,9 +20,10 @@ ul {
     text-align: center;
     border-radius: 10px;
     display: flex;
-    gap: 180px;
+    gap: 13.5%;
     list-style:  none;
-    margin: 50px;
+    margin-top: 100px;
+    margin-left: 55px;
 }
 li img{
     outline: 5px solid black;
