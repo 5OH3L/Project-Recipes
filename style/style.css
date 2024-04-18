@@ -1,0 +1,100 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    color: white;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../images/vegetablesBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(.5rem);
+}
+#title{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    position: absolute;
+}
+.recipes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.recipe img{
+    border-radius: 1rem;
+    border: .5rem solid white;
+    
+}
+.recipe a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border: .2rem solid white;
+    padding: .7rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    transition: .5s ease;
+}
+.recipe a:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+.recipe a:active{
+    transform: scale(1.05);
+}
+/* Animation */
+#title {animation: slideIn 1s ease both;}
+#image1{position: relative;animation: slideInFromLeft 1s .3s ease both;}
+#image2{position: relative;animation: fadeIn 2s .5s ease both;}
+#image3{position: relative;animation: slideInFromRight 1s .3s ease both;}
+#link1 {position: relative;animation: slideInFromLeft 1s .5s ease both;}
+#link2 {position: relative;animation: fadeIn 2s .7s ease both;}
+#link3 {position: relative;animation: slideInFromRight 1s .5s ease both;}
+
+/* Animation Presets */
+@keyframes slideIn{
+    from{top: -10%;}
+    to{top: 0%;}
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes slideInFromTop {
+    from{bottom: 200%;}
+    to{bottom: 0%;}
+}
+@keyframes slideInFromLeft {
+    from{right: 200%;}
+    to{right: 0%;}
+}
+@keyframes slideInFromRight {
+    from{left: 200%;}
+    to{left: 0%;}
+}
+@keyframes slideInFromBottom {
+    from{top: 200%;}
+    to{top: 0%;}
+}
